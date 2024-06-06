@@ -60,7 +60,7 @@ def buy_products(customer: Customer, shop: Shop) -> None:
         cost = shop.products[product] * amount
         cost_str = str(cost).format(":.2f")
         print(f"{amount} {product}s for "
-              f"{cost_str.strip(".0")} dollars")
+              f'{cost_str.strip(".0")} dollars')
         total_cost += cost
 
     print(f"Total cost is {total_cost} dollars")
